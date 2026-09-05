@@ -1,2 +1,2 @@
 # TrabalhosEnsinoMedio
-Trabalhos feitos no meu ensino médio tecnico de informática
+Trabalhos feitos no meu ensino médio técnico em informática
