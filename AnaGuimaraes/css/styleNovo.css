@@ -1,0 +1,190 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #e2e2e2, #c5b6a6);
+}
+
+.caixa-principal {
+    position: relative;
+    width: 850px;
+    height: 550px;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+    overflow: hidden;
+}
+
+.caixa-principal h1 {
+    font-size: 36px;
+}
+
+
+.div-topo {
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    z-index: 1; 
+}
+
+.btn-topo {
+    background-color: #ff4d4d; 
+    color: white; 
+    border: none;
+    border-radius: 50%; 
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+
+.form {
+    position: absolute;
+    width: 50%;
+    left: 0;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+form {
+    width: 100%;
+}
+
+.input {
+    position: relative;
+    margin: 25px 0;
+}
+
+.input input,
+.input select {
+    width: 100%;
+    padding: 13px 50px 13px 20px;
+    background: #ddd;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+.input input::placeholder 
+.input select{
+    color: #888;
+    font-weight: 400;
+}
+
+.input i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #888;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(50deg, #25e0bb, #009879); 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0; 
+    background-image: url("../img/alterar.jpg"); 
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.img.box1{
+    text-align: center; 
+}
+
+h1 {
+    white-space: nowrap; 
+}
+
+.img {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.aviso{
+    float: left;
+    font-size: 15px;
+    color: #888;
+    margin-bottom: 25px;
+}
+
+.error{
+    float: left;
+    font-size: 14px;
+    color: #eb0909;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 700px) {
+    .caixa-principal {
+        flex-direction: column;
+        width: 90%; 
+        height: 600px; 
+        overflow-y: auto; 
+    }
+
+    .form {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 20px; 
+    }
+
+    .img {
+        display: none;
+    }
+}
+

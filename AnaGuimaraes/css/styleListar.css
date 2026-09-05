@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #e2e2e2, #c5b6a6);
+}
+
+.caixa-principal {
+    position: relative;
+    width: 850px;
+    height: 550px;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cabecario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-bottom: #c5b6a6 solid 1px;
+}
+
+.cabecario .titulo h1 {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+    color: rgba(44, 43, 43, 0.712);
+}
+
+.cabecario .btn {
+    display: flex;
+    gap: 10px;
+}
+
+.cabecario .btn button {
+    background-color: #009879;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.cabecario .btn button:hover {
+    background-color: #007f63;
+}
+
+.table a{
+    color: #007f63;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.a{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.caixa-table {
+    display: flex;
+    justify-content: center; 
+    align-items: baseline; 
+    height: 100%; 
+    margin-top: 18px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.table {
+    border-radius: 15px 15px 0 0;
+    border-collapse: collapse;
+    overflow: hidden;
+    font-size: 0.9rem;
+    min-width: 600px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    
+}
+
+.table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+@media (max-width: 700px) {
+    .caixa-principal {
+        flex-direction: column; 
+        width: 90%; 
+        height: 800px; 
+        
+    }
+    .caixa-table {  
+        height: 100%; 
+        max-height: max-content;
+    }
+    .t1{
+        width: 900px;
+        overflow: auto;
+    }
+    .cabecario .titulo h1 {
+        font-size: 25px;
+    }
+
+    .cabecario .btn button{
+        width: 80px;
+        height: 35px;
+        padding-bottom: 2px;
+    }
+    
+}
